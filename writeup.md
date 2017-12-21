@@ -1,8 +1,5 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
 
 ---
 
@@ -16,8 +13,6 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 <img src="examples/laneLines_thirdPass.jpg" alt="laneLines_thirdPass" title="laneLines_thirdPass" width="960" height="540" />
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
-<img src="examples/grayscale.jpg" alt="grayscale" title="grayscale" width="300" height="169" />
 ---
 
 ### Reflection
@@ -27,32 +22,34 @@ The goals / steps of this project are the following:
 My pipeline consisted of 5 steps. 
 
     1. Convert the image to grayscale
+    https://github.com/inokatsu/CarND-LaneLines/blob/master/test_images_output/gray.jpg
     
     2. Define a kernel size and apply Gaussian smoothing
     
     3. Run Canny edge-detection on the blurred image, with low and high gradient thresholds
+    https://github.com/inokatsu/CarND-LaneLines/blob/master/test_images_output/canny_edge.jpg
     
-    4. Mask the region of interest on the canny-edged image.
+    4. Mask the region of interest on the canny-edged image. 
+    https://github.com/inokatsu/CarND-LaneLines/blob/master/test_images_output/masked_image.jpg
     
-    5. 
+    5. Hough transformation
+    https://github.com/inokatsu/CarND-LaneLines/blob/master/test_images_output/hough.jpg
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+    6. Overlaid the averaged and extrapolated lines on the input image.
+    https://github.com/inokatsu/CarND-LaneLines/blob/master/test_images_output/result.jpg
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![alt text][image1]
 
 
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
+One potential shortcoming would be what would happen when the white or yellow line are covered with snow. 
 
-Another shortcoming could be ...
+Another shortcoming could be that if a car with whilte or yellow body cuts in front of my car, the function might not work correctly. 
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+A possible improvement would be to make the function recognize another car and distinguisch the line on the ground.
 
-Another potential improvement could be to ...
