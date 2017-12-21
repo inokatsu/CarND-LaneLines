@@ -22,7 +22,7 @@ The goals / steps of this project are the following:
 My pipeline consisted of 5 steps. 
 
     1. Convert the image to grayscale
-    https://github.com/inokatsu/CarND-LaneLines/blob/master/test_images_output/gray.jpg
+    <img src="https://github.com/inokatsu/CarND-LaneLines/blob/master/test_images_output/gray.jpg" />
     
     2. Define a kernel size and apply Gaussian smoothing
     
