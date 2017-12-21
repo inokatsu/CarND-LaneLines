@@ -22,24 +22,23 @@ The goals / steps of this project are the following:
 My pipeline consisted of 5 steps. 
 
     1. Convert the image to grayscale
-    <img src="https://github.com/inokatsu/CarND-LaneLines/blob/master/test_images_output/gray.jpg" />
+    <img src="test_images_output/gray.jpg" alt="gray" title="gray" width="1280" height="960" />
     
     2. Define a kernel size and apply Gaussian smoothing
     
     3. Run Canny edge-detection on the blurred image, with low and high gradient thresholds
-    https://github.com/inokatsu/CarND-LaneLines/blob/master/test_images_output/canny_edge.jpg
+    <img src="test_images_output/canny_edge.jpg" alt="canny_edge" title="canny_edge" width="1280" height="960" />
     
     4. Mask the region of interest on the canny-edged image. 
-    https://github.com/inokatsu/CarND-LaneLines/blob/master/test_images_output/masked_image.jpg
+    <img src="test_images_output/masked_image.jpg" alt="masked_image" title="masked_image" width="1280" height="960" />
     
     5. Hough transformation
-    https://github.com/inokatsu/CarND-LaneLines/blob/master/test_images_output/hough.jpg
+    <img src="test_images_output/hough.jpg" alt="hough" title="hough" width="1280" height="960" />
 
     6. Overlaid the averaged and extrapolated lines on the input image.
-    https://github.com/inokatsu/CarND-LaneLines/blob/master/test_images_output/result.jpg
-
-
-
+    <img src="test_images_output/result.jpg" alt="result" title="result" width="1280" height="960" />
+    
+    
 
 ### 2. Identify potential shortcomings with your current pipeline
 
