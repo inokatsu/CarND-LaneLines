@@ -21,9 +21,8 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of 5 steps. 
 
-    1. Convert the image to grayscale
-    [//]: # (Image References)
-    <img src="test_images_output/gray.jpg" alt="gray" title="gray" width="1280" height="960" />
+1. Convert the image to grayscale
+<img src="test_images_output/gray.jpg" alt="gray" title="gray" width="1280" height="960" />
     
     2. Define a kernel size and apply Gaussian smoothing
     
