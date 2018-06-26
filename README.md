@@ -4,7 +4,7 @@
 ---
 [//]: # (Image References)
 
-[image1]: ./examples/laneLines_thirdPass.jpg "laneLines_thirdPass"
+[image1]: ./test_images_output/solidWhiteRight.gif "example_result_gif"
 [image2]: ./test_images_output/gray.jpg "gray"
 [image3]: ./test_images_output/canny_edge.jpg "canny_edge"
 [image4]: ./test_images_output/masked_image.jpg "masked_image"
@@ -17,7 +17,7 @@ The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
-![laneLines_thirdPass][image1]
+![example_result_gif][image1]
 
 ---
 
